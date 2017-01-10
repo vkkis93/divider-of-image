@@ -1,0 +1,30 @@
+{
+  "name": "divider-of-image",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "lint": "eslint api/** --ext .js",
+    "start": " nodemon -e js,json --exec 'node -r dotenv/config app.js'"
+  },
+  "keywords": [
+    "image", "divider", "sliced", "sharp", "example"
+  ],
+  "author": "viktor.kis <vkkis1993@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "dotenv": "^2.0.0",
+    "express": "~4.14.0",
+    "jade": "~1.11.0",
+    "mongoose": "^4.6.8",
+    "multer": "^1.2.1",
+    "nodemon": "^1.11.0",
+    "sharp": "^0.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.13.0"
+  }
+}

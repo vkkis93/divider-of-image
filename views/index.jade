@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1 Upload image
+  form(action="/image/modular", method="post", enctype="multipart/form-data")
+    p Please enter number of divison
+    input(type="text", multiple, name="number")
+    p Please enter description of image
+    input(type="text", multiple, name="description")
+    br
+    p Please choose image
+    input(type="file", multiple, name="image" accept='image/*')
+    br
+    br
+    button(type="submit", value="Upload") Upload File
+
+  p -----------
+  h1 Load image
+  form(action="/image", method="get", enctype="multipart/form-data")
+    p Please enter name of image(works regex) or leave empty if you want to load the last one image
+    input(type="text", name="name")
+    br
+    br
+    button(type="submit", value="Upload") Load

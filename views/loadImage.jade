@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    p Name: #{image.name}
+    p Description: #{image.description}
+    br
+    br
+    img(style='width:100%' src='data:image/jpg;base64,#{image.buffer}')
