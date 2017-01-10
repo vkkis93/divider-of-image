@@ -2,7 +2,7 @@ Divide image into parts
 
 Create '.env' file with the following content:
 ```bash
-MONGO_URL=mongodb://localhost:27017/rolique
+MONGO_URL=mongodb://localhost:27017/BlaBlaBla
 ```
 
 Install
